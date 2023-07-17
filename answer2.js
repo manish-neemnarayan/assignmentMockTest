@@ -19,7 +19,7 @@ const students = [
     },
   ];
   
-  const ans = students.reduce((result, student) => {
+  const result = students.reduce((result, student) => {
     const age = student.age;
   
     if (!result[age]) {
@@ -30,4 +30,4 @@ const students = [
     return result;
   }, {});
   
-  console.log(ans);
+  console.log(result);
